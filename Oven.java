@@ -5,8 +5,10 @@ public class Oven
     private int currentTemp;
 
     public Oven(int max, int current){
-        maxTemp = max;
-        currentTemp = current;
+        
+        maxTemp = Math.min(500, Math.max(max,0));
+        if (maxTemp == 0) maxTemp = 500; 
+        currentTemp = Math.min(maxTemp, Math.max(current,0));
     }
 
     public int getMaxTemp() {

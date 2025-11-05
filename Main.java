@@ -25,7 +25,7 @@ public class Main
     Person p = new Person(Firstname, Lastname, Age, SSN);
     p.print();
     */
-    Oven O = new Oven(450, 70);
+    Oven O = new Oven(N.nextInt(), N.nextInt());
     System.out.println("Maximum oven temperature:\n"+O.getMaxTemp());
     System.out.println("Starting temperature of the oven:\n"+O.getCurrentTemp());
     while(isOn){
