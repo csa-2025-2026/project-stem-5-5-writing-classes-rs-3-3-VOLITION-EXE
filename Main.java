@@ -6,7 +6,7 @@ public class Main
   {
     Scanner N = new Scanner(System.in);
     boolean isOn = true;
-    /*
+    
     String Firstname;
     String Lastname;
     int Age;
@@ -24,7 +24,7 @@ public class Main
 
     Person p = new Person(Firstname, Lastname, Age, SSN);
     p.print();
-    */
+    
     int start = N.nextInt();
     Oven O = new Oven(N.nextInt(), start);
     System.out.println("Maximum oven temperature:\n"+O.getMaxTemp());
